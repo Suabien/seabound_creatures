@@ -5,50 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/webpage.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/webpage.css">
     <title>Hải quỳ</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="/index.html">
-                <img src="/assets/img/logo.png" alt="logo">
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="logo">
                 <span>Jelly Fish</span>
             </a>
         </div>
 
         <div class="menu-navbar">
             <ul>
-                <li><a href="/index.html">Trang chủ</a></li>
-                <li><a href="/views/introduce.html">Giới thiệu</a></li>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="introduce.html">Giới thiệu</a></li>
                 <li>
                     <a href=""> Chủng loài
                         <i class="fa fa-angle-down fa-down" style="font-size:25px;margin-left: 8px;"></i>
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="/"></a>Vùng biển khơi mặt
+                        <li>
+                            Vùng biển khơi mặt
                             <ul class="sub-menu">
-                                <li><a href="/views/dolphin.html">Cá heo</a></li>
-                                <li><a href="/views/sea_turtle.html">Rùa biển</a></li>
-                                <li><a href="/views/killerwhale.html">Cá voi sát thủ</a></li>
+                                <li><a href="dolphin.html">Cá heo</a></li>
+                                <li><a href="sea_turtle.html">Rùa biển</a></li>
+                                <li><a href="killerwhale.html">Cá voi sát thủ</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="/"></a>Vùng biển khơi trung
+                        <li>
+                            Vùng biển khơi trung
                             <ul class="sub-menu">
-                                <li><a href="/views/jellyfish.html">Sứa biển</a></li>
-                                <li><a href="/views/squid.html">Mực biển</a></li>
-                                <li><a href="/views/octopus.html">Bạch tuộc</a></li>
+                                <li><a href="jellyfish.html">Sứa biển</a></li>
+                                <li><a href="squid.html">Mực biển</a></li>
+                                <li><a href="octopus.html">Bạch tuộc</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="/"></a>Vùng đáy vực khơi tăm tối
+                        <li>
+                            Vùng đáy vực khơi tăm tối
                             <ul class="sub-menu">
-                                <li><a href="/views/anemone.html">Hải quỳ</a></li>
-                                <li><a href="/views/dumbo.html">Dumbo otopus</a></li>
-                                <li><a href="/views/sea_spider.html">Nhện biển</a></li>
+                                <li><a href="anemone.html">Hải quỳ</a></li>
+                                <li><a href="dumbo.html">Dumbo otopus</a></li>
+                                <li><a href="sea_spider.html">Nhện biển</a></li>
                             </ul>
                         </li>
 
@@ -59,7 +62,16 @@
         </div>
 
         <div>
-            <a href="../views/login.html"><button class="login-btn">Đăng nhập</button></a>
+            <a href="login.html">
+                <button id="login-btn" class="login-btn">
+                    Đăng nhập
+                </button>
+            </a>
+            <a href="login.html">
+                <button id="logout-btn" class="logout-btn" onclick="logout()">
+                    Đăng xuất
+                </button>
+            </a>
         </div>
     </header>
 
@@ -82,38 +94,38 @@
                     </div>
 
                     <div class="content-mess">
-                            Hải quỳ, còn được gọi là quỳ hay sứa, là một nhóm sinh vật biển đặc biệt 
-                        không có xương sống và thuộc vào nhóm động vật giả xương (Cnidaria). 
-                        Chúng có một cấu trúc cơ thể độc đáo, mềm mại, trong suốt và thường có hình dạng 
+                        Hải quỳ, còn được gọi là quỳ hay sứa, là một nhóm sinh vật biển đặc biệt
+                        không có xương sống và thuộc vào nhóm động vật giả xương (Cnidaria).
+                        Chúng có một cấu trúc cơ thể độc đáo, mềm mại, trong suốt và thường có hình dạng
                         giống như một cái chùm hay chuông.
-                        <p> Điều thú vị về cấu trúc của hải quỳ là chúng được hình thành từ một lớp mền, 
-                        còn được gọi là mền chất, bao quanh một khoang nước giữa. Mền chất chứa các 
-                        tế bào cnidocytes, có khả năng phóng ra các tơ nhầy độc hại để tấn công hoặc 
-                        bắt mồi. Các tơ nhầy này có thể gây ngứa hoặc đau cho con người khi tiếp xúc. </p>
+                        <p> Điều thú vị về cấu trúc của hải quỳ là chúng được hình thành từ một lớp mền,
+                            còn được gọi là mền chất, bao quanh một khoang nước giữa. Mền chất chứa các
+                            tế bào cnidocytes, có khả năng phóng ra các tơ nhầy độc hại để tấn công hoặc
+                            bắt mồi. Các tơ nhầy này có thể gây ngứa hoặc đau cho con người khi tiếp xúc. </p>
 
-                        <img src="/assets/img/haiquy.jpg" alt="haiquy">
+                        <img src="../assets/img/haiquy.jpg" alt="haiquy">
 
-                            Trong việc di chuyển, hải quỳ sử dụng khả năng bơi của mình. Chúng di chuyển 
-                        bằng cách đẩy nước ra từ khoang nước giữa, tạo lực đẩy và đẩy cơ thể đi về phía 
-                        trước. Có thể điều chỉnh độ sâu và hướng di chuyển bằng cách điều chỉnh lượng 
-                        nước đẩy ra. Một số loài hải quỳ có khả năng di chuyển ngược lại với dòng nước 
+                        Trong việc di chuyển, hải quỳ sử dụng khả năng bơi của mình. Chúng di chuyển
+                        bằng cách đẩy nước ra từ khoang nước giữa, tạo lực đẩy và đẩy cơ thể đi về phía
+                        trước. Có thể điều chỉnh độ sâu và hướng di chuyển bằng cách điều chỉnh lượng
+                        nước đẩy ra. Một số loài hải quỳ có khả năng di chuyển ngược lại với dòng nước
                         bằng cách co dạng cơ thể và sử dụng những chuyển động đặc biệt.
-                        <p> Hải quỳ cũng có khả năng tương tác với môi trường xung quanh. Chúng có thể 
-                        phản ứng với ánh sáng, nhiệt độ, và các yếu tố môi trường khác để điều chỉnh hành 
-                        vi và chuyển động của mình. Một số loài còn có khả năng biến màu để tương hợp với 
-                        môi trường xung quanh hoặc để thu hút con mồi. </p>
+                        <p> Hải quỳ cũng có khả năng tương tác với môi trường xung quanh. Chúng có thể
+                            phản ứng với ánh sáng, nhiệt độ, và các yếu tố môi trường khác để điều chỉnh hành
+                            vi và chuyển động của mình. Một số loài còn có khả năng biến màu để tương hợp với
+                            môi trường xung quanh hoặc để thu hút con mồi. </p>
 
-                        <img src="/assets/img/actiniaria.jpg" alt="actiniaria">
+                        <img src="../assets/img/actiniaria.jpg" alt="actiniaria">
 
-                            Tính đa dạng và sự thích nghi của hải quỳ đã khiến chúng trở thành một phần 
-                        quan trọng của hệ sinh thái biển. Chúng cung cấp thức ăn cho nhiều loài sinh vật 
-                        biển khác, đồng thời cũng là mục tiêu săn mồi của một số loài cá và động vật khác. 
-                        Một số loài hải quỳ cũng có khả năng gây độc đối với con người, vì vậy cần phải 
+                        Tính đa dạng và sự thích nghi của hải quỳ đã khiến chúng trở thành một phần
+                        quan trọng của hệ sinh thái biển. Chúng cung cấp thức ăn cho nhiều loài sinh vật
+                        biển khác, đồng thời cũng là mục tiêu săn mồi của một số loài cá và động vật khác.
+                        Một số loài hải quỳ cũng có khả năng gây độc đối với con người, vì vậy cần phải
                         cẩn thận khi tiếp xúc với chúng.
-                        <p> Tổng thể, hải quỳ là những sinh vật biển đặc biệt và thú vị, với cấu trúc cơ 
-                        thể độc đáo, khả năng di chuyển linh hoạt và vai trò quan trọng trong hệ sinh thái 
-                        biển. Nghiên cứu về hải quỳ không chỉ giúp hiểu về sự đa dạng sinh học mà còn mang 
-                        lại thông tin quý giá về sự thích nghi và tiến hóa của các hệ sinh thái biển. </p>
+                        <p> Tổng thể, hải quỳ là những sinh vật biển đặc biệt và thú vị, với cấu trúc cơ
+                            thể độc đáo, khả năng di chuyển linh hoạt và vai trò quan trọng trong hệ sinh thái
+                            biển. Nghiên cứu về hải quỳ không chỉ giúp hiểu về sự đa dạng sinh học mà còn mang
+                            lại thông tin quý giá về sự thích nghi và tiến hóa của các hệ sinh thái biển. </p>
                     </div>
                 </div>
             </div>
@@ -125,9 +137,9 @@
                 <hr>
 
                 <li>
-                    <a href="/views/squid.html">
+                    <a href="squid.html">
                         <div class="fea-img">
-                            <img src="/assets/img/conmuc.jpg" alt="muc">
+                            <img src="../assets/img/conmuc.jpg" alt="muc">
                         </div>
 
                         <div class="fea-info">
@@ -138,9 +150,9 @@
                 <hr>
 
                 <li>
-                    <a href="/views/sea_turtle.html">
+                    <a href="sea_turtle.html">
                         <div class="fea-img">
-                            <img src="/assets/img/rua.jpg" alt="rua">
+                            <img src="../assets/img/rua.jpg" alt="rua">
                         </div>
 
                         <div class="fea-info">
@@ -151,9 +163,9 @@
                 <hr>
 
                 <li>
-                    <a href="/views/killerwhale.html">
+                    <a href="killerwhale.html">
                         <div class="fea-img">
-                            <img src="/assets/img/cavoi.webp" alt="cavoi">
+                            <img src="../assets/img/cavoi.webp" alt="cavoi">
                         </div>
 
                         <div class="fea-info">
@@ -164,9 +176,9 @@
                 <hr>
 
                 <li>
-                    <a href="/views/jellyfish.html">
+                    <a href="jellyfish.html">
                         <div class="fea-img">
-                            <img src="/assets/img/sua.jpg" alt="sua">
+                            <img src="../assets/img/sua.jpg" alt="sua">
                         </div>
 
                         <div class="fea-info">
@@ -177,9 +189,9 @@
                 <hr>
 
                 <li>
-                    <a href="/views/octopus.html">
+                    <a href="octopus.html">
                         <div class="fea-img">
-                            <img src="/assets/img/bachtuoc.jpg" alt="bachtuoc">
+                            <img src="../assets/img/bachtuoc.jpg" alt="bachtuoc">
                         </div>
 
                         <div class="fea-info">
@@ -195,7 +207,7 @@
     <footer id="footer">
         <div class="footer-container">
             <div class="ft-logo">
-                <img src="/assets/img/logo.png" alt="logo">
+                <img src="../assets/img/logo.png" alt="logo">
                 <span>Jelly Fish</span>
             </div>
 
@@ -210,20 +222,38 @@
                     <li>Số điện thoại: 0989440712</li>
                     <li>Email: nguyenthuhien5612@gmail.com</li>
                     <li>Lms: 2274820014@hpn.edu.vn</li>
-                    
+
                     <div class="ft-icon">
-                        <li><a href="https://www.facebook.com/suabien.1314"><i class="fa fa-facebook-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCXVgghCb63FZh7p9UPnqv5A"><i class="fa fa-youtube-play" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
-                        <li><a href="https://www.pinterest.com/MurakamiSugi/"><i class="fa fa-pinterest-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
-                        <li><a href="https://twitter.com/MikaToco?fbclid=IwAR07emJHG1zTvlfb0-_jwwJ6BDX40hlfkiPnjLenhCYGFfKqEZlZOJJikPs"><i class="fa fa-twitter-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
+                        <li>
+                            <a href="https://www.facebook.com/suabien.1314">
+                                <i class="fa fa-facebook-square" style="font-size:36px;color: rgb(165, 164, 164);"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCXVgghCb63FZh7p9UPnqv5A">
+                                <i class="fa fa-youtube-play" style="font-size:36px;color: rgb(165, 164, 164);"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/MurakamiSugi/">
+                                <i class="fa fa-pinterest-square" style="font-size:36px;color: rgb(165, 164, 164);"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/MikaToco?fbclid=IwAR07emJHG1zTvlfb0-_jwwJ6BDX40hlfkiPnjLenhCYGFfKqEZlZOJJikPs">
+                                <i class="fa fa-twitter-square" style="font-size:36px;color: rgb(165, 164, 164);"></i>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </div>
         </div>
     </footer>
-    
-    <script src="/controller/contact.js"></script>
-    <script src="/controller/back-to-top-button.js"></script>
+
+    <script src="../controller/checkAuth.js"></script>
+    <script src="../controller/contact.js"></script>
+    <script src="../controller/backToTop.js"></script>
 </body>
 
 </html>
