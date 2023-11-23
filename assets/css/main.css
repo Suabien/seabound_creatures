@@ -616,12 +616,13 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-    .main-container {
-        width: 70vw;
-        margin: 50px auto;
-        display: grid;
+    .slider {
+        height: 300px;
+    }
+}
 
-        /* chia 2 phần, 1 phần 60%, phần còn lại 40% */
+@media only screen and (max-width: 750px) {
+    .main-container {
         grid-template-columns: 100% 0;
     }
 
