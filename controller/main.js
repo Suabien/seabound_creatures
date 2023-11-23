@@ -4,9 +4,7 @@ var logoutBtn = document.getElementById('logout-btn');
 
 if (localStorage.getItem('isLoggedIn') === 'true') {
     loginBtn.style.display = 'none';
-    logoutBtn.style.display = 'block';
 } else {
-    loginBtn.style.display = 'block';
     logoutBtn.style.display = 'none';
 }
 
