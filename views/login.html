@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liên kết với Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="login-form" action="../index.html">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                        <i class="fas fa-envelope"></i> <!-- Sử dụng class của Font Awesome -->
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                        <i class="fas fa-lock"></i> <!-- Sử dụng class của Font Awesome -->
+                    </div>
+                    <div class="forget">
+                        <label>
+                            <input type="checkbox">Remember Me <a href="#">Forget Password</a>
+                        </label>
+                    </div>
+                    <button type="submit" id="login-button">Log in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần xử lý chức năng -->
+    <script>
+        // Lấy thông tin các trường từ DOM
+        const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+        const loginButton = document.getElementById("login-button");
+
+        // Thêm sự kiện input vào trường email
+        emailInput.addEventListener("input", function () {
+            if (emailInput.value) {
+                // Nếu trường email có giá trị thì thêm class
+                emailInput.classList.add("has-value");
+            } else {
+                // Nếu trường email không có giá trị thì xóa class
+                emailInput.classList.remove("has-value");
+            }
+        });
+
+        // Thêm sự kiện input vào trường password
+        passwordInput.addEventListener("input", function () {
+            if (passwordInput.value) {
+                // Nếu trường password có giá trị thì thêm class
+                passwordInput.classList.add("has-value");
+            } else {
+                // Nếu trường password không có giá trị thì xóa class
+                passwordInput.classList.remove("has-value");
+            }
+        });
+
+        // Thêm sự kiện submit vào form login
+        loginButton.addEventListener("click", function (e) {
+            // Ngăn chặn hành vi mặc định của nút Log in
+            e.preventDefault();
+            // Lấy giá trị từ trường email và password
+            let email = emailInput.value;
+            let password = passwordInput.value;
+
+            // Thực hiện xác thực
+            if (!email || !password) {
+                alert("Vui lòng điền đầy đủ thông tin.");
+            } else if (!validateEmail(email)) {
+                alert("Email không hợp lệ. Email phải chứa ký tự '@' và đúng định dạng.");
+            } else {
+                // Nếu xác thực thành công, chuyển hướng đến trang chủ
+                localStorage.setItem('isLoggedIn', 'true');
+                window.location.href = "../index.html";
+            }
+        });
+
+        // Hàm kiểm tra điều kiện của email
+        function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-image: url('/assets/img/background-login.png')
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.959);
+    border-radius: 5px;
+    
+    height: auto;
+    padding: 30px;
+}
+
+.content-title {
+    font-family: 'pala';
+    font-size: 2.1vw;
+
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.content-mess {
+    font-family: 'times';
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.content-mess img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.featured-list {
+    background-color: rgba(154, 189, 253, 0.829);
+    border-radius: 5px;
+}

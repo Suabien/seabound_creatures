@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Jelly Fish</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/assets/img/logo.png" alt="logo">
+                <span>Jelly Fish</span>
+            </a>
+        </div>
+
+        <div class="menu-navbar">
+            <ul>
+                <li><a href="/index.html">Trang chủ</a></li>
+                <li><a href="intro">Giới thiệu</a></li>
+                <li>
+                    <a href=""> Chủng loài
+                        <i class="fa fa-angle-down fa-down" style="font-size:25px;margin-left: 8px;"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="/"></a>Vùng biển khơi mặt
+                            <ul class="sub-menu">
+                                <li><a href="/views/caheo.html">Cá heo</a></li>
+                                <li><a href="/views/rua.html">Rùa biển</a></li>
+                                <li><a href="/views/killerwhale.html">Cá voi sát thủ</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/"></a>Vùng biển khơi trung
+                            <ul class="sub-menu">
+                                <li><a href="/views/jellyfish.html">Sứa biển</a></li>
+                                <li><a href="/views/muc.html">Mực biển</a></li>
+                                <li><a href="/views/octopus.html">Bạch tuộc</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/"></a>Vùng đáy vực khơi tăm tối
+                            <ul class="sub-menu">
+                                <li><a href="/views/haiquy.html">Hải quỳ</a></li>
+                                <li><a href="/views/dumbo.html">Dumbo otopus</a></li>
+                                <li><a href="/views/nhenbien.html">Nhện biển</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="contact">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="./views/login.html">
+                <button id="login-btn" class="login-btn">
+                    Đăng nhập
+                </button>
+            </a>
+            <a href="./views/login.html">
+                <button id="logout-btn" class="logout-btn" onclick="logout()">Đăng xuất</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="wel">
+            <div class="wel-title">
+                Khám phá biển sâu <br>
+            </div>
+
+            <div class="wel-mess">
+                Hãy khám phá theo cách riêng của bạn, chúc bạn có những trải nghiệm thú vị !
+            </div>
+        </div>
+
+        <div class="ig-slide">
+            <div class="slider">
+                <div class="list-slide">
+                    <div class="slide">
+                        <img src="/assets/img/slide 1.gif" alt="image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/img/slide 2.gif" alt="image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/img/slide 3.webp" alt="image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/img/slide 4.gif" alt="image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/img/slide 5.gif" alt="image 5">
+                    </div>
+                </div>
+
+                <!-- button prev and next -->
+                <div class="slide-btn">
+                    <button id="prev"><i class="fa fa-angle-left" style="font-size:30px"></i></button>
+                    <button id="next"><i class="fa fa-angle-right" style="font-size:30px"></i></button>
+                </div>
+
+                <!-- dots (if 5 slide => 5 dots)-->
+                <ul class="slide-dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="main-content">
+                <div id="about" class="introduce">
+                    <div class="in-title">
+                        Giới thiệu <br>
+                    </div>
+
+                    <div class="in-mess">
+                        Chào mừng bạn đến với trang web về sinh vật biển! <br>
+                        Khám phá vẻ đẹp và kỳ diệu của đại dương thông qua trang web của tôi.
+                        Tại đây, bạn sẽ được khám phá về đa dạng sinh vật biển, từ những loài cá đẹp mắt đến những sinh
+                        vật kỳ lạ.
+                        Tìm hiểu về vùng sống, thói quen sinh sống và tầm quan trọng của chúng trong việc duy trì cân
+                        bằng sinh thái.
+                        <p>Hãy bắt đầu cuộc hành trình của bạn dưới biển khơi và khám phá những điều tuyệt vời mà sinh
+                            vật biển mang đến. </p>
+
+                        <div class="more">
+                            <a href="/views/introduce.html">Xem thêm tại đây...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article article-bg">
+                    <div class="article-title">
+                        Bạn biết chưa?
+                    </div>
+
+                    <img src="/assets/img/haiquy.jpg" alt="haiquy">
+
+                    <div class="article-content">
+                        Hải quỳ không có xương sống và nó thuộc vào nhóm động vật giả xương (Cnidaria).
+                        Nó có cấu trúc mềm, trong suốt và thường có hình dạng giống như một cái chùm hay chuông.
+                        Hải quỳ di chuyển bằng cách bơi và chúng có khả năng điều chỉnh độ sâu và hướng di chuyển
+                        của mình. Một số loài cũng có khả năng di chuyển ngược lại với dòng nước bằng cách co dạng cơ
+                        thể.
+                    </div>
+
+                    <hr> <!-- Để tạo đường kẻ ngang -->
+                    <div class="find-out-more">
+                        <a href="/views/haiquy.html">Tìm hiểu thêm
+                            <button>></button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article article-bg">
+                    <div class="article-title">
+                        Đề xuất
+                    </div>
+
+                    <img src="/assets/img/sea-sheep.jpg" alt="sea-sheep">
+
+                    <div class="article-content">
+                        Sên biển cừu lá là một sinh vật biển thú vị thuộc họ gastropoda, có tên khoa học là Costasiella
+                        kuroshimae.
+                        Đây là một loài sên biển nhỏ gọn và có hình dáng độc đáo, thu hút sự chú ý của những người yêu
+                        thiên
+                        nhiên
+                        và nghiên cứu sinh vật biển.
+                    </div>
+
+                    <hr> <!-- Để tạo đường kẻ ngang -->
+                    <div class="find-out-more">
+                        <a href="/views/senbien.html">Tìm hiểu thêm
+                            <button>></button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article article-bg-orange">
+                    <div class="article-title">
+                        Đề xuất
+                    </div>
+
+                    <img src="/assets/img/dumbo.jpg" alt="dumbo">
+
+                    <div class="article-content">
+                        Dumbo octopus là một loài mực biển đáng yêu và thú vị, với hình dáng độc đáo và khả năng sống ở
+                        độ
+                        sâu lớn.
+                        Sự hiện diện của chúng trong đại dương là một minh chứng cho sự đa dạng tuyệt vời của cuộc sống
+                        biển
+                        và
+                        làm say mê những người quan sát sinh vật biển.
+                    </div>
+
+                    <hr> <!-- Để tạo đường kẻ ngang -->
+                    <div class="find-out-more">
+                        <a href="/views/dumbo.html">Tìm hiểu thêm
+                            <button>></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="featured-list featured-sticky">
+                <div class="featured-title">
+                    Nội dung nổi bật
+                </div>
+                <hr>
+
+                <li>
+                    <a href="/views/muc.html">
+                        <div class="fea-img">
+                            <img src="/assets/img/conmuc.jpg" alt="muc">
+                        </div>
+
+                        <div class="fea-info">
+                            Sự đa dạng và cuộc sống của loài mực
+                        </div>
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+                    <a href="/views/rua.html">
+                        <div class="fea-img">
+                            <img src="/assets/img/rua.jpg" alt="rua">
+                        </div>
+
+                        <div class="fea-info">
+                            Bí mật cuộc sống dưới vỏ bọc của con rùa
+                        </div>
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+                    <a href="/views/killerwhale.html">
+                        <div class="fea-img">
+                            <img src="/assets/img/cavoi.webp" alt="cavoi">
+                        </div>
+
+                        <div class="fea-info">
+                            Sự ác liệt và bí ẩn của cá voi sát thủ
+                        </div>
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+                    <a href="/views/jellyfish.html">
+                        <div class="fea-img">
+                            <img src="/assets/img/sua.jpg" alt="sua">
+                        </div>
+
+                        <div class="fea-info">
+                            Vẻ đẹp mê hoặc và sức sống bất ngờ của sứa
+                        </div>
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+                    <a href="/views/octopus.html">
+                        <div class="fea-img">
+                            <img src="/assets/img/bachtuoc.jpg" alt="bachtuoc">
+                        </div>
+
+                        <div class="fea-info">
+                            Cuộc sống độc đáo của bạch tuộc: Nghệ thuật sinh tồn dưới nước
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" id="back-to-top"><span><i class="fa fa-angle-up" style="font-size:36px"></i></span></a>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="ft-logo">
+                <img src="/assets/img/logo.png" alt="logo">
+                <span>Jelly Fish</span>
+            </div>
+
+            <div class="ft-content">
+                <ul class="ct-title">
+                    <li>Liên hệ</li>
+                </ul>
+
+                <ul class="ct-mess">
+                    <li>© Bản quyền thuộc sinh viên Nguyễn Thu Hiền - K10CNTTA - HVPNVN</li>
+                    <li>Địa chỉ: 68 Đ. Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội</li>
+                    <li>Số điện thoại: 0989440712</li>
+                    <li>Email: nguyenthuhien5612@gmail.com</li>
+                    <li>Lms: 2274820014@hpn.edu.vn</li>
+                    
+                    <div class="ft-icon">
+                        <li><a href="https://www.facebook.com/suabien.1314"><i class="fa fa-facebook-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCXVgghCb63FZh7p9UPnqv5A"><i class="fa fa-youtube-play" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
+                        <li><a href="https://www.pinterest.com/MurakamiSugi/"><i class="fa fa-pinterest-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
+                        <li><a href="https://twitter.com/MikaToco?fbclid=IwAR07emJHG1zTvlfb0-_jwwJ6BDX40hlfkiPnjLenhCYGFfKqEZlZOJJikPs"><i class="fa fa-twitter-square" style="font-size:36px;color: rgb(165, 164, 164);"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/controller/main.js"></script>
+    <script src="/controller/back-to-top-button.js"></script>
+</body>
+
+</html>
