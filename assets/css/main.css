@@ -328,7 +328,6 @@ header {
     color: rgb(14, 14, 14);
 
     left: 0px;
-    width: 100%;
     padding: 12px;
 
     border: 2px white solid;
@@ -368,7 +367,6 @@ header {
     color: white;
 
     left: 0px;
-    width: 100%;
     margin: 50px 0;
     padding: 12px;
 
@@ -392,15 +390,6 @@ header {
 }
 
 .article-bg .article-title {
-    background-color: rgb(130 124 206 / 71%) !important;
-}
-
-.article-bg-orange {
-    margin-bottom: 0;
-    background: rgb(88 82 155 / 80%) !important;
-}
-
-.article-bg-orange .article-title {
     background-color: rgb(130 124 206 / 71%) !important;
 }
 
@@ -474,7 +463,7 @@ header {
     border: 2px solid white;
 
     height: fit-content;
-    margin: 1px 0px 0px 70px;
+    margin: 1px 0px 0px 50px;
     padding: 10px;
 }
 
@@ -624,4 +613,19 @@ footer {
 
 .ft-icon li a:hover {
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-container {
+        width: 70vw;
+        margin: 50px auto;
+        display: grid;
+
+        /* chia 2 phần, 1 phần 60%, phần còn lại 40% */
+        grid-template-columns: 100% 0;
+    }
+
+    .featured-list {
+        display: none;
+    }
 }
